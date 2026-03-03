@@ -1,0 +1,23 @@
+dataset: Caltech101
+
+# Model parameters
+encoder_dim:
+  - [ 4096, 1024, 1024, 1024, 128 ]
+  - [ 4096, 1024, 1024, 1024, 128 ]
+n_classes: 101
+
+# Training parameters
+warmup_epochs: 10
+start_rectify_epoch: 10
+batch_size: 1024
+momentum: 0.98
+temperature: 1.0
+blr: 5.0e-4
+min_blr: 5.0e-4
+weight_decay: 0
+
+#environment parameters
+device: cuda:0
+data_path: dataset
+output_dir: output
+seed: 1

@@ -1,0 +1,22 @@
+dataset: umpc_food101
+
+# Model parameters
+encoder_dim:
+  - [ 768, 1024, 1024, 1024, 128 ]
+  - [ 768, 1024, 1024, 1024, 128 ]
+n_classes: 101
+
+# Training parameters
+start_rectify_epoch: 50
+batch_size: 1024
+momentum: 0.98
+temperature: 0.5
+blr: 5.0e-4
+min_blr: 5.0e-4
+weight_decay: 0
+
+#environment parameters
+device: cuda:0
+data_path: dataset
+output_dir: output
+seed: 1
