@@ -17,7 +17,7 @@ This repository provides the official implementation of our paper:
 
 This repository depends on the following core libraries: `PyTorch`, `NumPy`, `scikit-learn`,  `SciPy`, `munkres`. Recommended package versions are specified in `requirements.txt`.  You can install them by running:
 
-```python
+```bash
 pip install -r requirements.txt
 ```
 
@@ -37,14 +37,14 @@ The `/dataset` directory provides the Scene15 and LandUse21 datasets. All datase
 
 After cloning this repository, navigate to the project directory and run:
 
-```python
+```bash
 python main_train.py --config_file Scene15.yaml
 ```
 
 By default, the Mismatch Ratio (MR) and Corruption Ratio (CR) are set to 0.
 You can specify different values via command-line arguments, for example:
 
-```python
+```bash
 python main_train.py --config_file Scene15.yaml --m_ratio 0.2 --c_ratio 0.2
 ```
 
