@@ -1,3 +1,7 @@
+---
+typora-root-url: ./
+---
+
 # Uncover Underlying Correspondence for Robust Multi-view Clustering
 
 This repository provides the official implementation of our paper:
@@ -5,7 +9,13 @@ This repository provides the official implementation of our paper:
 > Haochen Zhou, Guofeng Ding, Mouxing Yang, Peng Hu, Yijie Lin, Xi Peng,  
 > *Uncover Underlying Correspondence for Robust Multi-view Clustering*, ICLR 2026 (Oral).  👉 [[Paper]](https://openreview.net/forum?id=a4S1nQay3b)
 
+## Introduction
 
+- Given that real-world multi-view data widely suffer from the **Noisy Correspondence (NC)** problem, this work explores a novel path for multi-view learning. 
+- Unlike existing methods that rely heavily on pre-defined (and potentially noisy) cross-view pairs, we assume the underlying correspondences are **unknown a priori** and reformulate multi-view learning as a **maximum likelihood estimation problem over the underlying cross-view correspondences**. This objective is elegantly solved via our EM-based algorithm, **CorreGen**. Through **CorreGen**, the model alternately uncovers the latent soft correspondence distributions and robustly optimizes the representation learning network. 
+- **CorreGen** not only theoretically unifies and generalizes the classic InfoNCE loss but also achieves SOTA performance across various complex noise scenarios, providing a fresh perspective for robust multi-view learning.
+
+![framework](/figures/framework.png)
 
 ## Requirements
 
@@ -66,3 +76,8 @@ If you find this repository useful in your research, please consider citing:
 ## Acknowledgement
 
 This implementation is based on [DIVIDE](https://github.com/XLearning-SCU/2024-AAAI-DIVIDE).
+
+
+
+
+
