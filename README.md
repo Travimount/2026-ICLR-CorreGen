@@ -11,7 +11,7 @@ This repository provides the official implementation of our paper:
 - Unlike existing methods that rely heavily on pre-defined (and potentially noisy) cross-view pairs, we assume the underlying correspondences are **unknown a priori** and reformulate multi-view learning as a **maximum likelihood estimation problem over the underlying cross-view correspondences**. This objective is elegantly solved via our EM-based algorithm, **CorreGen**. Through **CorreGen**, the model alternately uncovers the latent soft correspondence distributions and robustly optimizes the representation learning network. 
 - **CorreGen** not only theoretically unifies and generalizes the classic InfoNCE loss but also achieves SOTA performance across various complex noise scenarios, providing a fresh perspective for robust multi-view learning.
 
-![framework](/figures/framework.png)
+![framework](/figures/framework.jpg)
 
 ## Requirements
 
